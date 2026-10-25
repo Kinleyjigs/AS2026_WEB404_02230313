@@ -119,5 +119,3 @@ Every malicious payload that worked before is now rejected, and no injected comm
 
 The ping tool started out vulnerable to OS command injection because it passed user input directly to the system shell. By adding allowlist input validation and removing the shell entirely (`shell=False`), I closed the hole while keeping the app working normally. This maps to **OWASP A03:2021 Injection**, and the before-and-after tests confirm the attack is no longer possible.
 
----
----
